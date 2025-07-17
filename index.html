@@ -1,13 +1,130 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ZenNexux</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futuristic Web Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-   ZenNexux 
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      color: #0ff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(90deg, #00f, #0ff, #00f);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 3rem;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 10px #0ff; }
+      100% { text-shadow: 0 0 30px #0ff; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #0ff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 1px solid #0ff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0ff;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #888;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: linear-gradient(90deg, #00f, #0ff);
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #0ff;
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
-<body bgcolor="black" text color="white">
-  <h1>Hello, World!</h1>
-  <p>This is an official web by ZenNexux </p>
+<body>
+
+  <header>🚀 Welcome to the Future</header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#tech">Technology</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="features">
+    <h2>🔮 Futuristic Features</h2>
+    <p>This template comes with glowing neon UI, smooth animations, and a cyberpunk feel. Ideal for sci-fi startups, tech apps, or gaming portals.</p>
+    <button class="button">Explore More</button>
+  </section>
+
+  <section id="tech">
+    <h2>⚙️ Powered By</h2>
+    <ul>
+      <li>HTML5 + CSS3</li>
+      <li>Google Fonts (Orbitron)</li>
+      <li>Fully Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>📡 Contact Us</h2>
+    <p>Email: <a href="mailto:future@webverse.com" style="color:#0ff;">future@webverse.com</a></p>
+  </section>
+
+  <footer>© 2025 Futuristic Web Inc.</footer>
+
 </body>
 </html>
